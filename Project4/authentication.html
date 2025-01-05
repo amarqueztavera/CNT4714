@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - AMT</title>
+    <style>
+        form {
+            display: inline-block;
+            margin-top: 25px;
+        }
+
+        h1 {
+            color: yellow;
+            font-size: 28pt;
+        }
+        h2 {
+            color: lime;
+            font-size: 24pt;
+        }
+        h3 {
+            color: red;
+            font-size: 24pt;
+        }
+        body {
+            background: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: inline-block;
+            font-size: 18pt;
+            color: yellow;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="password"] {
+            background: #665D1E;
+            color: yellow;
+            font-size: 16pt;
+            font-weight: bold;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 20px 10px;
+            width: 300px;
+        }
+        input[type="submit"]/*, input[type="reset"]*/ {
+            font-size: 16pt;
+            font-weight: bold;
+            margin: 30px 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            color: lime;
+            background-color: #87852465;
+        }/*
+        input[type="reset"] {
+            color: red;
+            background-color: #440000;
+        }*/
+        .error {
+            color: red;
+            font-size: 14pt;
+        }
+        hr {
+            border: 1px solid white;
+            margin: 40px auto;
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Fall 2024 Project 4 Enterprise System</h1>
+    <h2>A Servlet/JSP-based Multi-tiered Enterprise Application Using a Tomcat Container</h2>
+    <h3>- User Authentication Page -</h3>
+    <hr>
+    <form action="Authentication" method="post">
+        <div class="usr">
+            <label for="username">UserName</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <input type="submit" value="Click To Authenticate">
+        </div>
+    </form>
+    
+    <hr>
+</body>
+</html>
